@@ -2,6 +2,7 @@ public class Piece {
   private int x;
   private int y;
   private boolean inGame;
+  public boolean color;
 
   public Piece(int x, int y, boolean inGame){
     this.x = x;
@@ -57,4 +58,20 @@ public class Piece {
 	public void setInGame(boolean inGame) {
 		this.inGame = inGame;
 	}
+
+  /**
+  * Returns value of color
+  * @return
+  */
+  public boolean getColor() {
+    return color;
+  }
+
+  /**
+  * Sets new value of color
+  * @param
+  */
+  public void setColor (boolean color) {
+    this.color = color;
+  }
 }
